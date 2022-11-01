@@ -3,7 +3,7 @@ CC = gcc
 all: main.out
 
 main.out: myutils.o my_cra.o main.o
-	${CC} -o main.exe main.o myutils.o my_cra.o -lm
+	${CC} -o main.out main.o myutils.o my_cra.o -lm
 
 my_cra.o: my_cra/my_cra.c
 	${CC} -Wall -c my_cra/my_cra.c -o my_cra.o -I.
