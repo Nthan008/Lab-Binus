@@ -6,7 +6,7 @@
 #include <time.h>
 
 #include "utils/myutils.h"
-#include "my_cra/my_cra.h"
+#include "my_cra/2602236685.h"
 
 void DecToBin(unsigned int x, unsigned int bitLength, char *output){
 
@@ -36,7 +36,7 @@ int main(void){
             for (unsigned int j = 0; j < pow(2,NUM_BITS); j++){
                 DecToBin(i,NUM_BITS,operand1);
                 DecToBin(j,NUM_BITS,operand2);
-                CRA(operand1,operand2,NUM_BITS,output);
+                CLA(operand1,operand2,NUM_BITS,output);
 
                 if (i+j != StrToUint(output,NUM_BITS+1)){
                     printf("[ERROR] i=%d + j=%d = %d\n",i,j,StrToUint(output,NUM_BITS+1));

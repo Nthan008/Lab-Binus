@@ -2,11 +2,11 @@ CC = gcc
 
 all: main.out
 
-main.out: myutils.o my_cra.o main.o
-	${CC} -o main.out main.o myutils.o my_cra.o -lm
+main.out: myutils.o 2602236685.o main.o
+	${CC} -o main.out main.o myutils.o 2602236685.o -lm
 
-my_cra.o: my_cra/my_cra.c
-	${CC} -Wall -c my_cra/my_cra.c -o my_cra.o -I.
+2602236685.o: my_cra/2602236685.c
+	${CC} -Wall -c my_cra/2602236685.c -o 2602236685.o -I.
 
 main.o: main.c
 	${CC} -Wall -c main.c -o main.o
