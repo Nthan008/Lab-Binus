@@ -1,20 +1,14 @@
-all: mylib.o
-	gcc -o main.exe main_test.c mylib.o
+CC=gcc
 
-mylib.o:
-	gcc -o mylib.o -c mylib/mylib.c
-clear:
-	rm -rf *.out
-	rm -rf *.o
+main: main.o utils.o
+	${CC} -Wall -O0 -o main.out main.o utils.o
 
-time-recursive: mylib.o 
-	gcc -o main_b_time_recursive.exe main_b_time_recursive.c mylib.o
+main.o: main.c 
+	${CC} -o main.o -c main.c
 
-time-iterative: mylib.o
-	gcc -o main_b_time_iterative.exe main_b_time_iterative.c mylib.o
+utils.o: utils/utils.c 
+	${CC} -o utils.o -c utils/utils.c
 
-space-recursive: mylib.o 
-	gcc -o main_b_space_recursive.exe main_b_space_recursive.c mylib.o 
-
-space-iterative: mylib.o
-	gcc -o 	 main_b_space_iterative.c mylib.o	
+clean:
+	rm -f *.o
+	rm -f *.out

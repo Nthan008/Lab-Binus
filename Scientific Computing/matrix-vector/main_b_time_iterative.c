@@ -3,7 +3,7 @@
 #include <time.h>
 #include <assert.h>
 
-#include "mylib/mylib.h"
+#include "utils/utils.h"
 
 int main (void) {
 
