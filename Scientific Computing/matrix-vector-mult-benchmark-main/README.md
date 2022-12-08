@@ -41,7 +41,7 @@ In this case, the amount of time needed to calculate the multiplication of $N\ti
 
 Below is the graph showing the amount of time needed (in milliseconds) as the size of the matrix (N) goes higher.
 
-![Time_complexity_graph](images/Time_Complexity.png)
+![Time_complexity_graph](images/TimeComplexity.png)
 
 ### Space Complexity
 
@@ -56,4 +56,4 @@ I used four N respectively, `N = 400`, `N = 800`, `N = 1200`, `N = 1600`. It can
 
 Below is the graph showing the amount of memory needed (in megabytes) as the size of the matrix (N) goes higher.
 
-![Space_complexity_graph](images/Space_Complexity.png)
+![Space_complexity_graph](images/SpaceComplexity.png)
